@@ -17,8 +17,8 @@ class DeferredWhoopsHandlerCreator {
     public static function makeWhoops()
     {
         $handler = new PrettyPageHandler();
-        $handler->setEditor(Config::get("whoopsconfigurator::editor"));
-        $handler->setPageTitle(Config::get("whoopsconfigurator::title"));
+        $handler->setEditor(Config::get("whoops-configurator::editor"));
+        $handler->setPageTitle(Config::get("whoops-configurator::title"));
 
         return $handler;
     }

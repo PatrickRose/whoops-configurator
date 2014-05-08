@@ -19,7 +19,7 @@ class WhoopsConfiguratorServiceProvider extends ExceptionServiceProvider
      */
     public function register()
     {
-        $this->package("WhoopsConfigurator", "whoopsconfigurator");
+        $this->package("patrickrose\whoops-configurator");
 
         parent::register();
    }
