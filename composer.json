@@ -1,0 +1,20 @@
+{
+    "name": "patrickrose/whoops-configurator",
+    "description": "Provides a sensible way to configure Whoops in Laravel",
+    "authors": [
+        {
+            "name": "Patrick Rose",
+            "email": "pjr0911025@googlemail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+	"illuminate/exception": "4.1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "PatrickRose\\WhoopsConfigurator": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
