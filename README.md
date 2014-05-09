@@ -6,7 +6,7 @@ Changing the configuration for Whoops is not.
 
 ## Installing
 
-Add the following to your composer.json[^1]:
+Add the following to your composer.json (Put it in the require-dev block since you aren't showing debug messages in production...right?):
 
 ```json
 "require-dev": {
@@ -18,7 +18,7 @@ Add the following to your composer.json[^1]:
 Then run `composer update` and watch as pretty much nothing happens
 
 Then load the service provider in your app.php file
-(I'd recommend against loading it in production)[^2]
+(I'd recommend against loading it in production - you can cascade so everything doesn't break by using the `append_config()` function)
 
 ```php
     "PatrickRose\WhoopsConfigurator\WhoopsConfiguratorServiceProvider"
@@ -38,7 +38,7 @@ Currently, there are two options: `editor` and `title`. They're mostly self expl
 
 ### Editors
 
-Whoops comes with support for four editors[^3]. To use one, just set the `editor` value to one of the following:
+Whoops comes with support for four editors (I may add support for other editors later). To use one, just set the `editor` value to one of the following:
 
 * **sublime** - Sublime Text 2
 * **emacs** - Emacs
@@ -51,6 +51,6 @@ If you wish to provide your own support, you may instead pass a closure. See [Wh
 
 Self explanatory. If you want to insult yourself, make a geeky joke or whatever then change the `title` value to whatever you like.
 
-[^1]: Put it in the require-dev block since you aren't showing debug messages in production...right?
-[^2]: You can cascade so everything doesn't break by using the `append_config()` function.
-[^3]: I may add support for other editors later
+## License
+
+This is licensed under the MIT license
