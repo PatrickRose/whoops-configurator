@@ -11,7 +11,7 @@ Add the following to your composer.json[^1]:
 ```json
 "require-dev": {
     ...,
-    "patrickrose/whoops-configurator": "0.0.*"
+    "patrickrose/whoops-configurator": "1.0.*"
 }
 ```
 
