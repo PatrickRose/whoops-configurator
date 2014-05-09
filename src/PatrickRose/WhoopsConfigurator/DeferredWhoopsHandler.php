@@ -27,10 +27,10 @@ class DeferredWhoopsHandler {
             if($whoopsDisplayHandler instanceof PrettyPageHandler) {
 
                 // Set a custom page title for our error page:
-                $whoopsDisplayHandler->setPageTitle(Config::get("whoops-configurator::editor"));
+                $whoopsDisplayHandler->setPageTitle(Config::get("whoops-configurator::title"));
 
                 // Set the "open:" link for files to our editor of choice:
-                $whoopsDisplayHandler->setEditor(Config::get("whoops-configurator::title"));
+                $whoopsDisplayHandler->setEditor(Config::get("whoops-configurator::editor"));
                 return $whoopsDisplayHandler;
 
             }
