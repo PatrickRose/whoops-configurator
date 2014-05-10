@@ -1,6 +1,7 @@
 {
     "name": "patrickrose/whoops-configurator",
     "license": "MIT",
+    "keywords": ["whoops", "laravel"],
     "description": "Provides a sensible way to configure Whoops in Laravel",
     "authors": [
         {
